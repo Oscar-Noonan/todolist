@@ -1,5 +1,6 @@
 package co.uk.oscarnoonan.todolist.database;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ public class Todo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String note;
 
     private Boolean isCompleted;
