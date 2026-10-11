@@ -1,9 +1,10 @@
 package co.uk.oscarnoonan.todolist.controllers;
 
-import co.uk.oscarnoonan.todolist.repositories.TodoRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import co.uk.oscarnoonan.todolist.repositories.TodoRepository;
 
 @Controller
 public class TodoController {
